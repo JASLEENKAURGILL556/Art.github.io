@@ -1,6 +1,4 @@
-# Art.github.io
-My portfolio
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>My Website</title>
