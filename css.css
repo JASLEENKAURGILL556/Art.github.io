@@ -42,7 +42,7 @@ body{
 }
 #navbar a{
 	color:#fff;
-	text-decoration: none;
+	text-decoration: underline;
 	font-size: 18px;
 	padding-right:15px;
 
