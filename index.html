@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Viewer</title>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Tutorial</title>
+
+     <!-- font Cinzel from google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!--css sheet-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\admin\Desktop\php class website project\css\style.css">
+
 </head>
 <body>
-   <form>
-     <table border="5" cellspacing="10" cellpadding="10">
-       <tr>
-         <th>Name</th>
-         <td input type="text" size="30" maxlength="50" placeholder="Enter your name" required pattern="[a-zA-Z]"{10} title="Incorrect Name"></td>
-       </tr>
+      <!--navbar link -->
+      <nav class="navbar">
+      	<ul class="link-container">
+      		<li class="link-item"><a href="#" class="link active">Home</a></li>
+      		<li class="link-item"><a href="#" class="link">Product</a></li>
+      		<li class="link-item"><a href="#" class="link">About</a></li>
+      		<li class="link-item"><a href="#" class="link">Contact</a></li>
+      	</ul>
+      	<div class="user-interactions">
+      		<div class="cart">
+      			<img src="images/cart-icon.jpg" class="cart-icon" alt="">
+      			<span class="cart-item-count">00</span>
+      		</div>
+      		<div class="user">
+      			<img src="images/profile-icon.png" class="user-icon" alt="">
+      		</div>
+      	</div>
+      </nav>
 
-       <tr>
-         <th>Email</th>
-         <td input type="email" size="30" maxlength="15" placeholder="Enter your email" required></td>
-       </tr>
-
-       <tr>
-        <th>Password</th>
-        <td input type="Password" size="30" maxlength="15" placeholder="Enter your email" required pattern="[0-9a-zA-z]"{13} title="Incorrect Password"></td>
-      </tr>
-
-      <tr>
-        <th>Date of Birth</th>
-        <td input type="determine-local" required></td>
-      </tr>
-      
-      <tr>
-        <th colspan="2">Submit Form</th>
-        <td input type="Submit" formaction="user.txt" required></td>
-      </tr>
+	<header class="header-section">
+		<h1 class="header-heading"><span>Premium</span> <b>Quality</b></h1>
+	</header>
 
 
+    <!--best selling product-->
+    <section class="best-selling-product-section">
+    	<h1 class="section-title">Best Selling Products</h1>
+    	<div class="product-container">
+    		<div class="product-card">
+    			<img src="images/light1.jpg" class="product-img" alt="">
+                <p class="product-name">Light-></p>
+    		</div>
+    		<div class="product-card">
+    			<img src="images/table.jpg" class="product-img" alt="">
+    			<p class="product-name">Table-></p>
+                
+    		</div>
+    		<div class="product-card">
+    			<img src="images/storage.jpg" class="product-img" alt="">
+    			<p class="product-name">Storage</p>
+                
+            </div>
+            <div class="product-card">
+    			<img src="images/sofa.jpg" class="product-img" alt="">
+    			<p class="product-name">Sofa</p>
+                
+    		</div>
+    		
+    	</div>
+    </section>
+
+    <!--mid section-->
+    <section class="mid-section">
+    	<div class="section-item-container">
+    		<img src="images/mid-section-img.jpg" class="section-bg" alt="" >
+    		<div class="section-info">
+    			<h1 class="title">premium quality <span>affordable</span></h1>
+    			<p class="info">What is the description of selling?
+Selling is any transaction in which money is exchanged for a good or service. During a sales negotiation, the seller attempts to convince or “sell” the buyer on the benefits of their offer</p>
+    		</div>
+    	</div>
+    </section>
+
+    <!--image-collage-section-->
+    <section class="image-mid-section">
+    	<div class="image-collage">
+    		
+    	</div>
+    </section>
 
 
-     </table>
-   </form>
-</body> 
+
+
+</body>
 </html>

@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'cinzel',serif;
+
+}
+
+.navbar{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 9;
+	transition: 0.5s;
+}
+
+.link-container{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.link-item{
+	margin: 10px;
+}
+
+.link{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.link.active, .link:hover{
+	opacity: 5;
+}
+
+.user-intraction{
+	display: flex;
+	position: absolute;
+	right: 5vw;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.cart, .user{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.cart-icon, .user-icon{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.cart-item-count{
+	font-family: 'lato',sans-serif;
+	color: white;
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 50%;
+	background: black;
+	position: absolute;
+	bottom: -12px;
+	left:-12px;
+	/*modification*/
+	justify-content: space-between;
+
+}
+
+.header-section{
+	width: 100%;
+	height: 100vh;
+	background: url("C:/Users/admin/Desktop/php class website project/images/img-final.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.header-heading{
+	font-size: 100px;
+	text-transform: capitalize;
+	color: white;
+}
+
+.header-heading span{
+	color: whitesmoke;
+	padding-right: 10px;
+}
+.header-heading b{
+	font-size: 100px;
+	text-transform: capitalize;
+	color: #d5be8b;
+
+}
+
+/*best selling product*/
+
+.best-selling-product{
+	position: relative;
+	padding: 60px 5vw;
+
+}
+
+.section-title{
+	text-transform: capitalize;
+	font-size: 30px;
+	margin: 10px;
+}
+
+
+
+.product-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-card{
+	border: 15px solid #d5be8b;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	postion: relative;
+	background: #d5be8b ;
+}
+
+.product-card:nth-child(even){
+	border-color: black;
+	background: black;
+}
+
+.product-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+
+}
+
+.product-name{
+	position: absolute;
+	color: white;
+	text-transform: 'lato',sans-serif;
+	font-size: 25px;
+    bottom: 0px;
+    left: 55px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.product-card:hover .product-name{
+     opacity: 1;
+}
+
+.product-card:hover .product-img{
+	opacity: 0.5;
+}
+
+/*mid section*/
+
+.mid-section{
+	width: 100%;
+	height: 800px;
+	padding: 40px 5vw;
+
+}
+
+.section-item-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 20px;
+}
+
+
+
+.section-bg{
+	width: 100%;
+	height: 100%;
+	postion: absolute;
+	z-index: -1;
+	top: 8px;
+	left: 0;
+
+}
+
+.section-info{
+	width: 50%;
+	height: 100%;
+	background: beige;
+	display: block;
+	margin-left: auto;
+	padding: 50px;
+	text-align: center;
+
+
+}
+
+.title{
+	font-size: 60px;
+	line-height: 100px;
+
+}
+
+.title span{
+	color: #d5be8b;
+
+}
+
+.info{
+	font-family: 'lato',sans-serif;
+	font-size: 25px;
+	line-height: 45px;
+	margin-top:30px ;
+	opacity: 0.5;
+}
+
+/*image collage*/
+
+.image-mid-section{
+     width: 100%;
+     height: 400px;
+     padding:50px 5vw;
+}
+
+.image-collage{
+	width: 100%;
+	height: 100%;
+	background: url("C:/Users/admin/Desktop/php class website project/images/img2.jpg");
+	background-size: cover;
+}
+
